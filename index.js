@@ -5,7 +5,10 @@
 
 const string1 = "My favorite dessert is jello";
 
+
 // Your code here...
+const result = string1.indexOf("j");
+console.log(result);
 
 
 
@@ -18,8 +21,12 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
+const cPosition = string2.indexOf("C");
+const oPosition = string2.indexOf("O");
+const lPosition = string2.indexOf("L");
 
-
+let cool = string2[cPosition] + string2[oPosition] + string2[oPosition] + string2[lPosition];
+console.log(cool);
 
 
 /*****************************************************
@@ -30,6 +37,7 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
+console.log(string3.repeat(4) + " " + "Batman!");
 
 
 
