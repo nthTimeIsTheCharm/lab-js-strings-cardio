@@ -51,6 +51,10 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 
 // Your code here...
 
+const favouriteFruitFirstLtetter = fruit.indexOf("mango");
+const favouriteFruitLastLetter = fruit.indexOf(" ", favouriteFruitFirstLtetter);
+const  favouriteFruit = fruit.slice(favouriteFruitFirstLtetter, favouriteFruitLastLetter);
+console.log(favouriteFruit);
 
 
 /***************************************************
@@ -58,21 +62,35 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 ***************************************************/
 // Using the string method .include(), check if the below strings with funny newspaper headlines include the word "oxygen".
 // If a string includes the word "oxygen" print to the console message "The string includes the word 'oxygen'",
-// else print the message "The string does not include the word 'oxygen'".
+// else print the message "The string includes the word 'oxygen'".
 
-const funnyHeadline1 = "Breathing oxygen linked to staying alive";
-const funnyHeadline2 = "Students Cook & Serve Grandparents";
+
+
 
 
 // Check the first headline
 // Your code here ...
+const funnyHeadline1 = "Breathing oxygen linked to staying alive";
+const result1 = funnyHeadline1.includes("oxygen");
+if (result1 === true){
+    console.log("The string includes the word 'oxygen'");
 
-
+}
+else {
+    console.log("The string does not includes the word 'oxygen'");
+}
 // Check the second headline
 // Your code here ...
 
+const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 
+if (funnyHeadline2.includes("oxygen")){
+    console.log("The string includes the word 'oxygen'");
+}
+else {
+    console.log("The string does not includes the word 'oxygen'");
+}
 /*******************************************
        Iteration 6 | String Length
 *******************************************/
@@ -81,9 +99,11 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 const string4 = "zEAWrTC9EgtxmK9w1";
 
 
+
 // a) Print the string length
 // Your code here ...
-
+console.log(string4.length);
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4[string4.length-1]);
